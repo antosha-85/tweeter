@@ -1,4 +1,4 @@
-section h2,form {
+section h2 {
     text-align: center;
 }
 
@@ -18,13 +18,16 @@ textarea {
 }
 
 [type='submit'] {
-    float: left;
     background-color: #4056a1;
     color: #ffffff;
     font-family: 'Bungee', sans-serif;
 }
 
 form span {
-    float: right;
     font-family: 'Bungee', sans-serif;;
+}
+
+.tweet_footer {
+    display: flex;
+    justify-content: space-between;;
 }
