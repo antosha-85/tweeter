@@ -2,6 +2,10 @@ nav {
     position: fixed;
     top: 0;
     height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     z-index: 2;
     background-color: #4056a1;
@@ -13,16 +17,14 @@ nav {
 nav span {
     font-family: 'Bungee', sans-serif;
     position: relative;
-    top: 30px;
+    top: 0px;
     /* position: fixed; */
 }
 
 nav div {
     font-weight: 300;
     font-size: 1rem;
-    position: relative;
-    top: -30px;
-    left: 90%;
+    
 }
 
 .new_tweet {
