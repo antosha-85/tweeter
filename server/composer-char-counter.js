@@ -7,4 +7,9 @@ $(document).ready(function () {
         }
     })
     
+    $('#tweet_container').hover (function () {
+        $('#handle').toggle();
+        $('#tweet_container').toggleClass('tweak_container_shadow')
+    });
+    
 })

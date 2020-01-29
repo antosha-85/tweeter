@@ -24,10 +24,47 @@ textarea {
 }
 
 form span {
-    font-family: 'Bungee', sans-serif;;
+    font-family: 'Bungee', sans-serif;
 }
 
 .tweet_footer {
     display: flex;
     justify-content: space-between;;
+}
+
+ .header_tweet {
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    margin: 10px 0px 0px 0px;
+ }
+
+ .body_tweet {
+    border-bottom: 2px solid black;
+}
+
+.footer_tweet {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tweet_container {
+    border: 2px solid black;
+    margin-top: 2rem;
+    font-size: 1 rem;
+    
+
+}
+.tweak_container_shadow {
+    box-shadow: 10px 10px 0px rgba(103, 128, 219, 0.2); 
+}
+
+.tweet_article {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hidden_span {
+    display: none;
 }
