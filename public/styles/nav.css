@@ -34,3 +34,17 @@ nav div {
     font-size: 1.5rem;
     font-weight: 600;
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+.fas {
+    color: red;
+    font-size: 24px;
+}
+
+.right_top_header {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
