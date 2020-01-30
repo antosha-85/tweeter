@@ -6,24 +6,30 @@ const calculateDaysAgo = dateFrom => {
     return diffDays;
 }
 
+const escape =  function(str) {
+    let div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
+
 function createTweetElement(obj) {
     const markup = `
         <article class="tweet_article">
             <header class="header_tweet">
                 <div class='leftHeader'>
-                    <img src=${obj.user.avatars}>
-                    <div>${obj.user.name}</div>
+                    <img src=${escape(obj.user.avatars)}>
+                    <div>${escape(obj.user.name)}</div>
                 </div>
             <div>
-                <span class="handle hidden_span">${obj.user.handle}</span>
+                <span class="handle hidden_span">${escape(obj.user.handle)}</span>
             </div>
             </header>
             <div class="body_tweet">
-                <p>${obj.content.text}</p>
+                <p>${escape(obj.content.text)}</p>
             </div>
             <footer class="footer_tweet">
                 <div>
-                    ${calculateDaysAgo(obj.created_at)} days ago
+                    ${escape(calculateDaysAgo(obj.created_at))} days ago
                 </div>
                 <div>
                 Likes
@@ -35,8 +41,10 @@ function createTweetElement(obj) {
 }
 
 const renderTweets = function (tweets) {
+    const $tweetContainer = $('#tweet_container');
+    $tweetContainer.empty();
     for (const tweet of tweets) {
         const newElement = createTweetElement(tweet);
-        $('#tweet_container').append(newElement)
+        $('#tweet_container').prepend(newElement)
     }
 }

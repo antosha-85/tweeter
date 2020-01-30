@@ -1,5 +1,13 @@
 const postTweetToServer = function(event) {
-    event.preventDefault();
+  event.preventDefault();
+    if ($('textarea').val() === '') {
+      alert('This field cannot be empty!')
+      return;
+    }
+    if($('textarea').val().length > 140 ) {
+      alert('You exceeded the number of characters!');
+      return;
+    };
     const data = $(this).serialize()
     console.log('data :', data);
     $.ajax({
