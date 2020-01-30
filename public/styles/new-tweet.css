@@ -40,6 +40,16 @@ form span {
     margin: 10px 0px 0px 0px;
  }
 
+ .leftHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 
+ }
+ .header_tweet img {
+     position: static;
+     width: 40px;
+ }
+
  .body_tweet {
     border-bottom: 2px solid black;
 }
@@ -49,22 +59,21 @@ form span {
     justify-content: space-between;
 }
 
-#tweet_container {
+.tweet_article {
     border: 2px solid black;
     margin-top: 2rem;
     font-size: 1 rem;
-    
+    margin: 10px auto 20px auto;
+    width: 90%;
 
 }
-.tweak_container_shadow {
+.tweet_article:hover {
     box-shadow: 10px 10px 0px rgba(103, 128, 219, 0.2); 
 }
 
-.tweet_article {
-    width: 90%;
-    margin: 0 auto;
+.tweet_article:hover .handle {
+    display: inline;
 }
-
-.hidden_span {
+.handle {
     display: none;
 }
