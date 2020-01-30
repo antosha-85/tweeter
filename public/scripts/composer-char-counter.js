@@ -9,11 +9,4 @@ $(document).ready(function () {
             $('.counter').css("color", "black");
         }
     })
-    
-    // $('#tweet_container').on('mouseover', '.tweet_article', function () {
-    //     console.log('DFGNFD');
-    //     $(this).find('.handle').toggleClass('hidden_span');
-    //     $(this).toggleClass('tweet_article_shadow')
-    // });
-    
 })

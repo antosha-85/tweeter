@@ -1,14 +1,19 @@
 const postTweetToServer = function(event) {
   event.preventDefault();
-    if ($('textarea').val() === '') {
-      alert('This field cannot be empty!')
+    if ($.trim($('textarea').val()).length === 0) {
+      console.log('hello world!')
+      $( ".alert1" ).slideDown( "2000" );
+      $( ".alert2" ).slideUp( "2000" );
       return;
     }
-    if($('textarea').val().length > 140 ) {
-      alert('You exceeded the number of characters!');
+    $( ".alert1" ).slideUp( "2000" );
+    if($.trim($('textarea').val()).length > 140 ) {
+      $( ".alert2" ).slideDown( "2000" );
+      $( ".alert1" ).slideUp( "2000" );
       return;
     };
-    const data = $(this).serialize()
+    $( ".alert2" ).slideUp( "2000" );
+    const data = $(this).serialize();
     console.log('data :', data);
     $.ajax({
       url: "/tweets",

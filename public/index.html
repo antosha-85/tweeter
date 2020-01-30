@@ -55,7 +55,9 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">
+      <div class="alert alert1"><i class="fa fa-exclamation-circle" ></i>This field cannot be empty!<i class="fa fa-exclamation-circle" ></i></div>
+      <div class="alert alert2"><i class="fa fa-exclamation-circle" ></i>You exceeded the number of characters!<i class="fa fa-exclamation-circle" ></i></div>
+      <section class="new-tweet" id='section_to_hide'>
         <h2>Compose Tweet</h2>
         <form  action="/tweets" method="POST" Content-Type: application/x-www-form-urlencoded>
           <textarea name="text" placeholder="What are you humming about?"></textarea>
