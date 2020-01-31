@@ -28,11 +28,13 @@ function createTweetElement(obj) {
                 <p>${escape(obj.content.text)}</p>
             </div>
             <footer class="footer_tweet">
-                <div>
+                <div class='timeAgo'>
                     ${escape(calculateDaysAgo(obj.created_at))} days ago
                 </div>
-                <div>
-                Likes
+                <div class='icons'>
+                    <i class="fab fa-font-awesome-flag"></i>
+                    <i class="fas fa-retweet"></i>
+                    <i class="fas fa-heart"></i>
                 </div>
             </footer>
         </article>

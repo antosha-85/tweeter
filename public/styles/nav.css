@@ -28,7 +28,6 @@ nav span {
     font-family: 'Bungee', sans-serif;
     position: relative;
     top: 0px;
-    /* position: fixed; */
 }
 
 nav div {
@@ -75,9 +74,14 @@ nav div {
     text-align: center;
     font-size: 2rem;
     display: none;
-    margin-top: 20px;
+    margin-top: 1.5rem;
+    padding: 1rem;
 }
 
+.icons, .timeAgo, .leftHeader img, .body_tweet p {
+    padding: 5px;
+}
+/* doing my media stuff */
 @media only screen and (min-width: 768px) {
     body {
         display: flex;
@@ -86,11 +90,11 @@ nav div {
     header.main_header {
         margin: 10rem 3rem 0 3rem;
         width: 35%;
-        max-height: 300px;
+        max-height: 19rem;
     }
 
     main.container {
-        margin: 10rem 3rem 0 3rem;
+        margin: 12rem 3rem 0 3rem;
         width: 65%
     }
 
@@ -99,7 +103,7 @@ nav div {
         /* height: 30%; */
     } 
     .name_photo h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-align: center;
         margin-top: 0.25rem;
     }
@@ -109,7 +113,9 @@ nav div {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        min-height: 200px;
-
-    
+        min-height: 12.5rem;
+    }
+    .icons, .timeAgo, .leftHeader img, .body_tweet p {
+        padding: 5px;
+    }
 }
