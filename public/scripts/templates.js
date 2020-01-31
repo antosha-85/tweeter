@@ -1,19 +1,19 @@
 const calculateDaysAgo = dateFrom => {
-    const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
-    const firstDate = new Date();
-    const secondDate = new Date(dateFrom);
-    const diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay));
-    return diffDays;
-}
+  const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+  const firstDate = new Date();
+  const secondDate = new Date(dateFrom);
+  const diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay));
+  return diffDays;
+};
 
 const escape =  function(str) {
-    let div = document.createElement('div');
-    div.appendChild(document.createTextNode(str));
-    return div.innerHTML;
-  }
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
 
 function createTweetElement(obj) {
-    const markup = `
+  const markup = `
         <article class="tweet_article">
             <header class="header_tweet">
                 <div class='leftHeader'>
@@ -38,15 +38,15 @@ function createTweetElement(obj) {
                 </div>
             </footer>
         </article>
-     `
-    return markup
+     `;
+  return markup;
 }
 
-const renderTweets = function (tweets) {
-    const $tweetContainer = $('#tweet_container');
-    $tweetContainer.empty();
-    for (const tweet of tweets) {
-        const newElement = createTweetElement(tweet);
-        $('#tweet_container').prepend(newElement)
-    }
-}
+const renderTweets = function(tweets) {
+  const $tweetContainer = $('#tweet_container');
+  $tweetContainer.empty();
+  for (const tweet of tweets) {
+    const newElement = createTweetElement(tweet);
+    $('#tweet_container').prepend(newElement);
+  }
+};
