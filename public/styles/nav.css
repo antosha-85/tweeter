@@ -68,3 +68,28 @@ nav div {
     margin-top: 20px;
 }
 
+@media only screen and (min-width: 768px) {
+    body {
+        display: flex;
+    }
+
+    header.main_header {
+        margin: 10rem 3rem 0 3rem;
+        width: 35%;
+    }
+
+    main.container {
+        margin: 10rem 3rem 0 3rem;
+        width: 65%
+    }
+
+    img.your_photo {
+        width: 50%;
+        height: 50%;
+    } 
+    .name h2 {
+        font-size: 1.5rem;
+    }
+
+    
+}
