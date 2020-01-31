@@ -31,7 +31,7 @@ function createTweetElement(obj) {
                 <div class='timeAgo'>
                     ${escape(calculateDaysAgo(obj.created_at))} days ago
                 </div>
-                <div class='icons'>
+                <div class='icons handle'>
                     <i class="fab fa-font-awesome-flag"></i>
                     <i class="fas fa-retweet"></i>
                     <i class="fas fa-heart"></i>

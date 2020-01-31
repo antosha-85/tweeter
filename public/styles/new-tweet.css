@@ -13,8 +13,6 @@ textarea {
     background-color: #f4f1ec;
     width: 100%;
     font-family: 'Bungee', sans-serif;
-
-
 }
 
 [type='submit'] {
@@ -43,8 +41,8 @@ form span {
  .leftHeader {
     display: flex;
     justify-content: space-between;
-    width: 
  }
+ 
  .header_tweet img {
      position: static;
      width: 40px;
@@ -74,6 +72,10 @@ form span {
 .tweet_article:hover .handle {
     display: inline;
 }
-.handle {
+.handle, .icons {
+    display: none;
+}
+
+.new-tweet {
     display: none;
 }

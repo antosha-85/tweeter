@@ -78,7 +78,7 @@ nav div {
     padding: 1rem;
 }
 
-.icons, .timeAgo, .leftHeader img, .body_tweet p {
+.icons, .timeAgo, .leftHeader img, .body_tweet p, .hidden_span {
     padding: 5px;
 }
 /* doing my media stuff */
@@ -88,13 +88,13 @@ nav div {
     }
 
     header.main_header {
-        margin: 10rem 3rem 0 3rem;
+        margin: 12rem 3rem 0 3rem;
         width: 35%;
         max-height: 19rem;
     }
 
     main.container {
-        margin: 12rem 3rem 0 3rem;
+        margin: 11rem 3rem 0 3rem;
         width: 65%
     }
 
@@ -115,7 +115,7 @@ nav div {
         align-items: center;
         min-height: 12.5rem;
     }
-    .icons, .timeAgo, .leftHeader img, .body_tweet p {
+    .icons, .timeAgo, .leftHeader img, .body_tweet p, .hidden_span {
         padding: 5px;
     }
 }

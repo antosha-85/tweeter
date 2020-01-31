@@ -19,7 +19,6 @@ const postTweetToServer = function(event) {
     // after the problem resolved removing second warning
     $( ".alert2" ).slideUp( "2000" );
     const data = $(this).serialize();
-    console.log('data :', data);
     $.ajax({
       url: "/tweets",
       method: "POST",
