@@ -63,6 +63,7 @@ form span {
     font-size: 1 rem;
     margin: 10px auto 20px auto;
     width: 90%;
+    word-wrap: break-word;
 
 }
 .tweet_article:hover {
@@ -78,4 +79,11 @@ form span {
 
 .new-tweet {
     display: none;
+}
+
+.red {
+    color: red;
+}
+.black {
+    color: black;
 }
